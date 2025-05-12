@@ -1,0 +1,106 @@
+#intro {
+    background-image: url(../assets/images/Background_Intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-block: 110px 57px;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .intro-content {
+
+        .profile-pic {
+            position: relative;
+
+
+            border-radius: 50%;
+            border: 2px solid var(--red);
+            margin-bottom: 20px;
+        
+            img {
+                padding: 5px;
+            }
+
+            #code {
+                position: absolute;
+                bottom: -10px;
+                right: -10px;
+            }
+        }
+
+        max-width: 680px;
+        margin-inline: auto;
+    }
+
+    .languages {
+        gap: 16px;
+
+        & > * {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            border-radius: 50px;
+            background-color: var(--gray-300);
+            color: var(--gray-500);
+            font: var(--text-md);
+            padding-inline: 16px;
+            padding-block: 8px;
+        }
+        
+    }
+
+    div small span {
+        color: var(--red);
+    }
+
+    div h1 {
+        margin-block: 8px 20px;
+    }
+
+}
+
+#projects {
+    min-height: 100vh;
+    max-height: 100vh;
+
+    padding-inline: 163px;
+
+    .header {
+        margin-block: 20px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        article {
+            background-color: var(--gray-300);
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        article img {
+            border-radius: 8px;
+            max-width: 280px;
+        }
+
+        article h3 {
+            font: var(--title-sm);
+            color: var(--gray-600);
+
+            margin-block: 12px 8px;
+        }
+
+        article p {
+            font: var(--text-sm);
+            color: var(--gray-500);
+        }
+    }
+
+}
