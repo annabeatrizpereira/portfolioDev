@@ -62,9 +62,19 @@
         margin-block: 8px 20px;
     }
 
+    .arrow {
+        transition: transform 0.3s ease;
+      }
+      
+    .arrow:hover {
+        transform: scale(1.2); /* aumenta 20% */
+      }
+
 }
 
 #projects {
+    scroll-margin-top: 50px;
+
     min-height: 100vh;
     max-height: 100vh;
 
@@ -88,6 +98,12 @@
             background-color: var(--gray-300);
             border-radius: 12px;
             padding: 12px;
+        }
+
+        article:hover {
+            border: 1px solid var(--gray-400);
+            background-color: var(--gray-300);
+            padding: 11px;
         }
 
         article img {
@@ -180,10 +196,24 @@
         gap: 12px;
     }
 
+    .social-media section:hover {
+        border: 1px solid var(--blue);
+        padding: 19px;
+    }
+
     .social-media section p {
         text-align: start;
         width: 100%;
         font: var(--text-md);
         color: var(--gray-500);
+    }
+
+    svg {
+        color: #e2e4e9; /* cor padrão */
+        transition: color 0.3s ease;
+    }
+
+    svg:hover {
+        color: #3996DB;
     }
 }
